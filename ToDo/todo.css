@@ -154,3 +154,29 @@ main {
 .task .actions .delete {
 	color: crimson;
 }
+
+/* Return Button */
+
+.return-button {
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+	background-image: linear-gradient(to right, var(--pink), var(--purple));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	color: #FFF;
+	padding: 10px;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.4s;
+}
+
+.return-button:hover {
+	background-color: #1F2937;
+	opacity: 0.5;
+}
+
+.return-button:active {
+	background-color: #111827;
+	opacity: 0.3;
+}

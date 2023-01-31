@@ -1,3 +1,13 @@
+:root {
+	--dark: #374151;
+	--darker: #1F2937;
+	--darkest: #111827;
+	--grey: #6B7280;
+	--pink: #EC4899;
+	--purple: #8B5CF6;
+	--light: #EEE;
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -11,11 +21,11 @@ html, body{
 }
 body{
     font-family: serif;
-    background-color: rgb(47, 62, 75);
+    background-color: var(--dark);
     color: aliceblue;
 }
 .header{
-    background-color: rgb(28, 33, 41);
+    background-color: var(--darkest);
     width: 100%;
     height: 60px;
     position: fixed;
@@ -33,7 +43,7 @@ body{
     top: 0;
     width: 250px;
     margin-top: 60px;
-    background-color: rebeccapurple;
+    background-color: var(--darker);
     transform: translate(-250px);
     transition: transform 300ms ease-in-out;
 }
@@ -44,10 +54,10 @@ body{
 }
 .menu li{
     color: rgb(0, 0, 0);
-    border-bottom: 1 px solid #456;
+    border-bottom: 1 px solid rgb(0, 128, 255);
 }
 .menu li a{
-    color: rgb(10, 10, 46);
+    color: var(--light);
     display: block;
     text-decoration: none;
     text-transform: uppercase;
